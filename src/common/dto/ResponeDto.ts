@@ -9,5 +9,4 @@ export class ResponseDto<T> {
     this.data = data;
     this.error = error;
   }
-
 }
