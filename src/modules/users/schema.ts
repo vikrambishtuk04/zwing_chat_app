@@ -9,13 +9,13 @@ export class User {
   @Prop()
   name: string;
 
-  @Prop()
+  @Prop({ unique: true, required: true })
   mobile: string;
 
-  @Prop()
+  @Prop({ unique: true, required: true })
   email: string;
 
-  @Prop()
+  @Prop({ unique: true, required: true })
   username: string;
 
   @Prop()
@@ -30,7 +30,7 @@ export class User {
   @Prop()
   status: string;
 
-  @Prop()
+  @Prop({ unique: true })
   vu_id: number;
 
   @Prop()
