@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';   
-import { ChatService } from './service';
+import { ChatService } from '../services/chat.service';
 
 @Controller('chats')
 export class ChatController {
