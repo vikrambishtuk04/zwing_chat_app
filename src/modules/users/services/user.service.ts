@@ -3,7 +3,7 @@ import { ResponseDto } from 'src/common/dto/ResponeDto';
 import { getDb } from 'db/config';
 import { vendorUsers, VendorUser, vendorRoles, vendorRoleUserMapping } from 'db/schema';
 import { eq } from 'drizzle-orm';
-import { UserListResponse } from './dto/UserResponseDto';
+import { UserListResponse } from '../dto/UserResponseDto';
 @Injectable()
 export class UserService {
 

@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { ChatController } from './controller';
+import { ChatController } from './controllers/chat.controller';
 // import { User, userSchema } from './schema';
 import { MongooseModule } from '@nestjs/mongoose';
-import { ChatService } from './service';
+import { ChatService } from './services/chat.service';
 
 @Module({
   imports: [
