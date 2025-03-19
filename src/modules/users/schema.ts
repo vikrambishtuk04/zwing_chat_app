@@ -71,7 +71,3 @@ export const vendorRoleUserMapping = mysqlTable('vendor_role_user_mapping', {
   created_at: timestamp('created_at').default(sql`CURRENT_TIMESTAMP`),
   updated_at: timestamp('updated_at').default(sql`CURRENT_TIMESTAMP`),
 });
-
-export type VendorRoleUserMapping = typeof vendorRoleUserMapping.$inferSelect;
-export type VendorRole = typeof vendorRoles.$inferSelect;
-export type VendorUser = typeof vendorUsers.$inferSelect;
