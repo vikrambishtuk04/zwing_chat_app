@@ -5,8 +5,8 @@ import { ChatModule } from './modules/chats/module';
 @Module({
   imports: [
     MongooseModule.forRoot('mongodb://localhost:27017/zwing_chat'),
-    UserModule, 
-    ChatModule
+    UserModule,
+    ChatModule,
   ],
   controllers: [],
   providers: [],
